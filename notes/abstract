@@ -1,0 +1,10 @@
+Presence-only data occurs in ecology when, e.g., locations where individuals of some species were observed are recorded. A common goal in analyzing presence-only data is to estimate the association between the intensity (i.e. frequency per unit area) of presences and some explanatory covariates. The Poisson point process (PPP) is a simple mathematical model for presence-only data where the intensity is a function only of the explanatory covariates. The Cox process is a generalization of the PPP which also includes a spatial random effect to model the intuition that nearby locations tend to be alike.
+
+Renner et al. (2015) reviewed several methods for estimating regression coefficients in PPP and Cox process models. However, when estimating a regression model with a spatial random effect, spatial confounding can bias the coefficient estimates. Hodges and Reich (2010) showed that spatial confounding occurs when the covariates are not orthogonal to the spatial structure of the units of observation.
+
+A point process has no clearly defined units of observation. However, evaluating the likelihood of a point process requires estimating the value of an integral by numerical methods. The method of quadrature generalizes Riemann integration to estimate the value of an integral by calculating a sum of the integrand at a large number of points. We show that the arrangement of the quadrature points can induce spatial confounding, and propose a method for estimating the coefficients in a Cox process model where the spatial random effect is not confounded with the regression coefficients.
+
+{\bf References}
+Hodges, J. S. and Reich, B. J., (2010) Adding spatially-correlated errors can mess up the fixed effect you love, {\em The American Statistician}, 64(4), 325--334.
+
+Renner, I. W., Elith, J., Baddeley, A., Fithian, W., Hastie, T., Phillips, S. J., Popovic, G., & Warton, D. I., (2015) Point process models for presence-only analysis. {\em Methods in Ecology and Evolution}, 6, 366--379.
